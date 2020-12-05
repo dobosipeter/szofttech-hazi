@@ -6,5 +6,6 @@ namespace szofttech_hazi
 {
     interface IRiasztasiKezelo
     {
+        public void Frissites(){}
     }
 }
