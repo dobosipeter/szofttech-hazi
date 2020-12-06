@@ -9,8 +9,14 @@ namespace szofttech_hazi
         protected static List<Esemeny> esemenyek = new List<Esemeny>();
         protected List<IRiasztasiKezelo> riasztasiKezelok;
 
-        public void RiasztasiKezeloHozaaadasa(IRiasztasiKezelo riasztasiKezelo){}
-        public void RiasztasiKezeloEltavolitasa(IRiasztasiKezelo riasztasiKezelo){}
+        public void RiasztasiKezeloHozaadasa(IRiasztasiKezelo riasztasiKezelo)
+        {
+            riasztasiKezelok.Add(riasztasiKezelo);
+        }
+        public void RiasztasiKezeloEltavolitasa(IRiasztasiKezelo riasztasiKezelo)
+        {
+            riasztasiKezelok.Remove(riasztasiKezelo);
+        }
         public void RiasztasiKezelokErtesitese()
         {
             foreach (var riasztasiKezelo in riasztasiKezelok)
