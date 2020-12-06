@@ -17,6 +17,12 @@ namespace szofttech_hazi
             egyszeruRiasztas = false;
             tuzJelzesRiasztas = false;
         }
+
+        public bool[] GetRiasztasiAllapot()
+        {
+            bool[] allapot = {egyszeruRiasztas, tuzJelzesRiasztas};
+            return allapot;
+        }
         public void setEgyszeruRiasztas()
         {
             egyszeruRiasztas = true;
