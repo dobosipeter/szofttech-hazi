@@ -6,7 +6,7 @@ namespace szofttech_hazi
 {
     class Riasztorendszer
     {
-        static List<Esemeny> esemenyek = new List<Esemeny>();
+        protected static List<Esemeny> esemenyek = new List<Esemeny>();
         protected List<IRiasztasiKezelo> riasztasiKezelok;
 
         public void RiasztasiKezeloHozaaadasa(IRiasztasiKezelo riasztasiKezelo){}

@@ -20,6 +20,7 @@ namespace szofttech_hazi
         public void setEgyszeruRiasztas()
         {
             egyszeruRiasztas = true;
+            esemenyek.Add(new Esemeny(DateTime.Now, Esemeny.EsemenyTipusok.EGYSZERU));
             TimeStuff();
             egyszeruRiasztas = false;
             RiasztasiKezelokErtesitese();
@@ -28,6 +29,7 @@ namespace szofttech_hazi
         public void setTuzjelzesiRiasztas()
         {
             tuzJelzesRiasztas = true;
+            esemenyek.Add(new Esemeny(DateTime.Now, Esemeny.EsemenyTipusok.TUZ));
             TimeStuff();
             tuzJelzesRiasztas = false;
             RiasztasiKezelokErtesitese();
@@ -36,7 +38,9 @@ namespace szofttech_hazi
         public void setMindketto()
         {
             egyszeruRiasztas = true;
+            esemenyek.Add(new Esemeny(DateTime.Now, Esemeny.EsemenyTipusok.EGYSZERU));
             tuzJelzesRiasztas = true;
+            esemenyek.Add(new Esemeny(DateTime.Now, Esemeny.EsemenyTipusok.TUZ));
             TimeStuff();
             egyszeruRiasztas = false;
             tuzJelzesRiasztas = false;
