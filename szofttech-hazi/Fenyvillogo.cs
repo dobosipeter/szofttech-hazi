@@ -21,6 +21,7 @@ namespace szofttech_hazi
         public void Frissites()
         {
             allapotok = vezerloPanel.GetRiasztasiAllapot();
+            Riasztas();
         }
 
         public void Riasztas()

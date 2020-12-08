@@ -9,6 +9,9 @@ namespace szofttech_hazi
         public static void Main(string[] args)
         {
             Riasztorendszer riasztorendszer = new Riasztorendszer();
+            VezerloPanel vezerloPanel = new VezerloPanel();
+            Fenyvillogo fenyvillogo = new Fenyvillogo(vezerloPanel);
+            vezerloPanel.setEgyszeruRiasztas();
         }
     }
 }
