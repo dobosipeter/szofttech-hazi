@@ -43,7 +43,7 @@ namespace szofttech_hazi
         {
             tuzJelzesRiasztas = true;
             esemenyek.Add(new Esemeny(DateTime.Now, Esemeny.EsemenyTipusok.TUZ));
-
+            TimeStuff();
             tuzJelzesRiasztas = false;
             RiasztasiKezelokErtesitese();
         }
@@ -54,7 +54,7 @@ namespace szofttech_hazi
             esemenyek.Add(new Esemeny(DateTime.Now, Esemeny.EsemenyTipusok.EGYSZERU));
             tuzJelzesRiasztas = true;
             esemenyek.Add(new Esemeny(DateTime.Now, Esemeny.EsemenyTipusok.TUZ));
-
+            TimeStuff();
             egyszeruRiasztas = false;
             tuzJelzesRiasztas = false;
             RiasztasiKezelokErtesitese();

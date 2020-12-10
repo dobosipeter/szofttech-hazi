@@ -12,7 +12,8 @@ namespace szofttech_hazi
             VezerloPanel vezerloPanel = new VezerloPanel();
             Fenyvillogo fenyvillogo = new Fenyvillogo(vezerloPanel);
             //RendorsegiErtesitoAdapter rendorsegiErtesitoAdapter = new RendorsegiErtesitoAdapter(vezerloPanel);
-            vezerloPanel.setEgyszeruRiasztas();
+            //vezerloPanel.setEgyszeruRiasztas();
+            vezerloPanel.setMindketto();
         }
     }
 }
