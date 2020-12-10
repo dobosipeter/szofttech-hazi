@@ -14,8 +14,8 @@ namespace szofttech_hazi
             Szirena szirena = new Szirena(vezerloPanel);
             RendorsegiErtesitoAdapter rendorsegiErtesitoAdapter = new RendorsegiErtesitoAdapter(vezerloPanel);
             //vezerloPanel.setEgyszeruRiasztas();
-            vezerloPanel.setMindketto();
             //vezerloPanel.setTuzjelzesiRiasztas();
+            vezerloPanel.setMindketto();
         }
     }
 }
