@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace szofttech_hazi
 {
@@ -31,6 +32,9 @@ namespace szofttech_hazi
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.SetCursorPosition(0, 0);
                 Console.Write("Riasztás!");
+                Thread.Sleep(1000);
+                Console.Clear();
+                Thread.Sleep(1000);
             }
         }
     }
