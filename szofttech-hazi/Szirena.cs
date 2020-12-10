@@ -23,43 +23,33 @@ namespace szofttech_hazi
             Riasztas();
         }
 
+        private void writeStuff(string szo)
+        {
+            Console.SetCursorPosition(0, 1);
+            Console.Write(szo);
+            Thread.Sleep(1000);
+            Console.Clear();
+        }
+
         private void Riasztas()
         {
             if (allapotok[0] && allapotok[1])
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.SetCursorPosition(0, 1);
-                Console.Write("Né");
-                Thread.Sleep(1000);
-                Console.Clear();
-                Console.SetCursorPosition(0, 1);
-                Console.Write("Nó");
-                Thread.Sleep(1000);
-                Console.Clear();
+                writeStuff("Né");
+                writeStuff("Nó");
             }
             else if (allapotok[0])
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.SetCursorPosition(0, 1);
-                Console.Write("Né");
-                Thread.Sleep(1000);
-                Console.Clear();
-                Console.SetCursorPosition(0, 1);
-                Console.Write("Nó");
-                Thread.Sleep(1000);
-                Console.Clear();
+                writeStuff("Né");
+                writeStuff("Nó");
             }
             else if (allapotok[1])
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.SetCursorPosition(0, 1);
-                Console.Write("Né");
-                Thread.Sleep(1000);
-                Console.Clear();
-                Console.SetCursorPosition(0, 1);
-                Console.Write("Nó");
-                Thread.Sleep(1000);
-                Console.Clear();
+                writeStuff("Né");
+                writeStuff("Nó");
             }
         }
     }
