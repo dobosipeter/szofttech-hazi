@@ -31,8 +31,11 @@ namespace szofttech_hazi
                 Console.SetCursorPosition(0, 1);
                 Console.Write("Né");
                 Thread.Sleep(1000);
+                Console.Clear();
+                Console.SetCursorPosition(0, 1);
                 Console.Write("Nó");
                 Thread.Sleep(1000);
+                Console.Clear();
             }
             else if (allapotok[0])
             {
@@ -40,8 +43,11 @@ namespace szofttech_hazi
                 Console.SetCursorPosition(0, 1);
                 Console.Write("Né");
                 Thread.Sleep(1000);
+                Console.Clear();
+                Console.SetCursorPosition(0, 1);
                 Console.Write("Nó");
                 Thread.Sleep(1000);
+                Console.Clear();
             }
             else if (allapotok[1])
             {
@@ -49,8 +55,11 @@ namespace szofttech_hazi
                 Console.SetCursorPosition(0, 1);
                 Console.Write("Né");
                 Thread.Sleep(1000);
+                Console.Clear();
+                Console.SetCursorPosition(0, 1);
                 Console.Write("Nó");
                 Thread.Sleep(1000);
+                Console.Clear();
             }
         }
     }
