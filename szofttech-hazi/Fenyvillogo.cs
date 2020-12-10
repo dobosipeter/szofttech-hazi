@@ -23,36 +23,38 @@ namespace szofttech_hazi
             Riasztas();
         }
 
+        public void writeStuff(string szo, int eltolas)
+        {
+            Console.SetCursorPosition(eltolas, 3);
+            Console.Write(szo);
+        }
+
+        public void timingStuff()
+        {
+            Thread.Sleep(1000);
+            Console.Clear();
+            Thread.Sleep(1000);
+        }
+
         public void Riasztas()
         {
             if (allapotok[0] && allapotok[1])
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.SetCursorPosition(0, 3);
-                Console.Write("Riasztás!");
-                Console.SetCursorPosition(10, 3);
-                Console.Write("Tűzjelző!");
-                Thread.Sleep(1000);
-                Console.Clear();
-                Thread.Sleep(1000);
+                writeStuff("Riasztás!", 0);
+                writeStuff("Tűzjelző!", 10);
+                timingStuff();
             }
             else if (allapotok[0])
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.SetCursorPosition(0, 3);
-                Console.Write("Riasztás!");
-                Thread.Sleep(1000);
-                Console.Clear();
-                Thread.Sleep(1000);
+                writeStuff("Riasztás!", 0);
+                timingStuff();
             }
             else if (allapotok[1])
             {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.SetCursorPosition(10, 3);
-                Console.Write("Tűzjelző!");
-                Thread.Sleep(1000);
-                Console.Clear();
-                Thread.Sleep(1000);
+                writeStuff("Tűzjelző!", 10);
+                timingStuff();
             }
         }
     }
