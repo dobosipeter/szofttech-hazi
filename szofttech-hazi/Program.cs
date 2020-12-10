@@ -11,9 +11,11 @@ namespace szofttech_hazi
             Riasztorendszer riasztorendszer = new Riasztorendszer();
             VezerloPanel vezerloPanel = new VezerloPanel();
             Fenyvillogo fenyvillogo = new Fenyvillogo(vezerloPanel);
+            Szirena szirena = new Szirena(vezerloPanel);
             //RendorsegiErtesitoAdapter rendorsegiErtesitoAdapter = new RendorsegiErtesitoAdapter(vezerloPanel);
             //vezerloPanel.setEgyszeruRiasztas();
-            vezerloPanel.setMindketto();
+            //vezerloPanel.setMindketto();
+            vezerloPanel.setTuzjelzesiRiasztas();
         }
     }
 }

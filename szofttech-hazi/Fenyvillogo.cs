@@ -8,8 +8,6 @@ namespace szofttech_hazi
     class Fenyvillogo : IRiasztasiKezelo
     {
         VezerloPanel vezerloPanel;
-        private bool egyszeruRiasztas;
-        private bool tuzJelzesRiasztas;
         bool[] allapotok;
 
         public Fenyvillogo(VezerloPanel vezerloPanel)
